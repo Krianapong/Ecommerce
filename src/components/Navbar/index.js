@@ -7,7 +7,7 @@ import CommonModal from "../CommonModal";
 import Cookies from "js-cookie";
 import { usePathname, useRouter } from "next/navigation";
 import CartModal from "../CartModal";
-
+import "../../app/globals.css";
 function NavItems({ isModalView = false, isAdminView, router }) {
   return (
     <div
@@ -83,7 +83,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+      <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200" id="nav">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div
             onClick={() => router.push("/")}

@@ -18,8 +18,12 @@
 
 body {
   color: rgb(var(--background-start-rgb));
+  /* background: url("../app/snow.gif"); */
   min-height: 100vh;
   height: 100%;
+  /* background-position: center; */
+  background-repeat:initial;
+  /* background-size: cover; */
 }
 
 body::-webkit-scrollbar {
@@ -40,4 +44,28 @@ body::-webkit-scrollbar-thumb {
 }
 #img_prodict:hover {
   transform: scale(1.5);
+}
+
+#slideshowImage {
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#slideshowImage:hover {
+  opacity: 0.9;
+}
+#nav {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#chismas {
+  background: rgb(255, 254, 254);
+}
+
+#box {
+  transition: transform .2s;
+}
+
+#box:hover {
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 10px 10px 10pc 0 rgba(0, 0, 0, 0.2);
 }
